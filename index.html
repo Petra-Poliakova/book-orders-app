@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bookstore</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <nav>
+      <p class="welcome">Log in to get started</p>
+      <p class="logo"><i class="fab fa-3x fa-accusoft"></i></p>
+      <form class="login">
+        <input
+          type="text"
+          placeholder="Username: pp"
+          class="login_input login_input-user"
+        />
+        <input
+          type="text"
+          placeholder="Password: 1111"
+          maxlength="4"
+          class="login_input login_input-password"
+        />
+        <button class="login_btn">
+          <i class="fas fa-angle-double-right"></i>
+        </button>
+      </form>
+      <form class="logout">
+        <button class="logout_btn">Log out</button>
+      </form>
+    </nav>
+    <main class="app">
+      <h3>Orders</h3>
+      <div class="orders_head">
+        <div class="orders_row_head">
+          <div class="orders_number_head">ISBN</div>
+          <div class="orders_name_head">Book name</div>
+          <div class="orders_date_head">Order date</div>
+          <div class="orders_price_head">Price</div>
+          <div class="orders_status_head">Status</div>
+        </div>
+      </div>
+      <div class="orders">
+        <div class="orders_row">
+          <div class="orders_number">123456</div>
+          <div class="orders_name">Roll With It</div>
+          <div class="orders_date">3 days ago</div>
+          <div class="orders_price">-11,45€</div>
+          <div class="orders_status order_status_unpaid">unpaid</div>
+        </div>
+        <div class="orders_row">
+          <div class="orders_number">023856</div>
+          <div class="orders_name">Such a Fun Age</div>
+          <div class="orders_date">02/10/2020</div>
+          <div class="orders_price">5,10€</div>
+          <div class="orders_status order_status_paid">paid</div>
+        </div>
+      </div>
+      <h5>Order Summary</h5>
+      <div class="summary">
+        <div class="summary_label">Total price paid:</div>
+        <div class="summary_value summary_paid-price">5,10€</div>
+        <div class="summary_label">Total price unpaid:</div>
+        <div class="summary_value summary_unpaid-price">-11,45€</div>
+        <button class="btn-sort">&downarrow; SORT</button>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

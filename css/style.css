@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 1.25rem;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #33475b;
+  background-color: rgba(241, 241, 230, 0.4); /*#f1f1e6*/
+  height: 100%;
+  line-height: 1.5;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+.login {
+  display: flex;
+}
+.login_input {
+  border: 1px solid #33475b;
+  padding: 10px 5px;
+  width: 150px;
+  font-family: inherit;
+  color: inherit;
+}
+.login_input:first-child {
+  margin-right: 3px;
+  border-radius: 5px 0 0 5px;
+}
+.login_input:focus {
+  outline: none;
+  border: 2px solid #33475b;
+}
+.login_btn {
+  border: 1px solid #33475b;
+  width: 50px;
+  background: #33475b;
+  border-radius: 0 5px 5px 0;
+}
+.login_btn i {
+  color: #fff;
+}
+.login_btn:focus,
+.login_btn:hover {
+  background: #25394d;
+}
+
+.logout {
+  display: none;
+}
+.logout_btn {
+  border: 1px solid #33475b;
+  width: 150px;
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 5px;
+  background: #33475b;
+  border-radius: 0 5px 5px 0;
+}
+.logout_btn:focus,
+.logout_btn:hover {
+  background: #25394d;
+}
+.app {
+  position: relative;
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 50px;
+  opacity: 0;
+  transition: all 1s;
+}
+.orders_head {
+  grid-row: 1;
+  margin: 25px 0;
+}
+.orders_row_head {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  color: #fff;
+  background: #25394d;
+}
+.orders_number_head,
+.orders_name_head,
+.orders_date_head,
+.orders_price_head,
+.orders_status_head {
+  width: 25%;
+  padding: 0 10px;
+}
+.orders_row {
+  display: flex;
+  padding: 25px;
+  border-bottom: 1px solid #f1f1e6;
+}
+.orders {
+  grid-row: 1;
+  margin: 25px 0;
+}
+.orders_number,
+.orders_name,
+.orders_date,
+.orders_price,
+.orders_status {
+  width: 25%;
+  padding: 0 10px;
+}
+.summary_paid-price,
+.order_status_paid {
+  color: #39c221;
+}
+.summary_unpaid-price,
+.order_status_unpaid {
+  color: #c23921;
+}
+.btn-sort {
+  margin-left: auto;
+  border: 1px solid #25394d;
+  background: #25394d;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  padding: 0 8px;
+}
+.summary {
+  display: flex;
+  padding: 25px 0;
+}
+.summary_label {
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.summary_value {
+  margin-right: 25px;
+}
+@media (max-width: 540px) {
+  html {
+    font-size: 0.75rem;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav p {
+    padding-bottom: 15px;
+  }
+  .summary_label {
+    font-size: 0.75rem;
+    margin-right: 15px;
+  }
+}
